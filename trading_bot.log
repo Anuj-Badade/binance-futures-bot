@@ -1,0 +1,127 @@
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:08:39 | CRITICAL | trading_bot.cli | Configuration error: No key
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=None
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=None
+2026-04-22 16:08:39 | ERROR    | trading_bot.cli | Input validation failed: Price is required for LIMIT orders. Use --price to specify.
+2026-04-22 16:08:39 | ERROR    | trading_bot.cli | Input validation failed: Price is required for LIMIT orders. Use --price to specify.
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | Order placed successfully: {'orderId': 99999, 'clientOrderId': 'abc', 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'FILLED', 'origQty': '0.001', 'executedQty': '0.001', 'avgPrice': '67000.00', 'price': '0', 'timeInForce': 'GTC', 'updateTime': 1234567890000}
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | Order placed successfully: {'orderId': 99999, 'clientOrderId': 'abc', 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'FILLED', 'origQty': '0.001', 'executedQty': '0.001', 'avgPrice': '67000.00', 'price': '0', 'timeInForce': 'GTC', 'updateTime': 1234567890000}
+2026-04-22 16:08:39 | INFO     | trading_bot.cli | Order placed successfully: {'orderId': 99999, 'clientOrderId': 'abc', 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'FILLED', 'origQty': '0.001', 'executedQty': '0.001', 'avgPrice': '67000.00', 'price': '0', 'timeInForce': 'GTC', 'updateTime': 1234567890000}
+2026-04-22 16:09:06 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:09:06 | CRITICAL | trading_bot.cli | Configuration error: BINANCE_TESTNET_API_KEY is not set. Please set it in your environment or .env file.
+2026-04-22 16:18:02 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:18:02 | INFO     | trading_bot.client | BinanceFuturesClient initialized (base_url=https://testnet.binancefuture.com)
+2026-04-22 16:18:02 | INFO     | trading_bot.client | Placing BUY MARKET order: symbol=BTCUSDT qty=0.001 price=None
+2026-04-22 16:18:02 | DEBUG    | urllib3.connectionpool | Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2026-04-22 16:18:02 | DEBUG    | urllib3.connectionpool | https://testnet.binancefuture.com:443 "GET /fapi/v1/time HTTP/1.1" 200 28
+2026-04-22 16:18:02 | INFO     | trading_bot.client | API REQUEST  -> POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776854881832&signature=38fc1c83b1d0e9dd9c5b90d32ddf15150b4fb87c1d58b954d13f71fb4d832862
+2026-04-22 16:18:02 | DEBUG    | trading_bot.client | Request params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776854881832}
+2026-04-22 16:18:03 | DEBUG    | urllib3.connectionpool | https://testnet.binancefuture.com:443 "POST /fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776854881832&signature=38fc1c83b1d0e9dd9c5b90d32ddf15150b4fb87c1d58b954d13f71fb4d832862 HTTP/1.1" 401 46
+2026-04-22 16:18:03 | INFO     | trading_bot.client | API RESPONSE <- POST /fapi/v1/order (HTTP 401)
+2026-04-22 16:18:03 | DEBUG    | trading_bot.client | Response body: {"code":-2014,"msg":"API-key format invalid."}
+2026-04-22 16:18:03 | ERROR    | trading_bot.client | API error: HTTP 401 | code=-2014 | msg=API-key format invalid.
+2026-04-22 16:18:03 | ERROR    | trading_bot.cli | API error placing order: Binance API Error [401] (code -2014): API-key format invalid.
+2026-04-22 16:19:47 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-04-22 16:19:47 | INFO     | trading_bot.client | BinanceFuturesClient initialized (base_url=https://testnet.binancefuture.com)
+2026-04-22 16:19:47 | INFO     | trading_bot.client | Placing BUY MARKET order: symbol=BTCUSDT qty=0.001 price=None
+2026-04-22 16:19:47 | DEBUG    | urllib3.connectionpool | Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2026-04-22 16:19:47 | DEBUG    | urllib3.connectionpool | https://testnet.binancefuture.com:443 "GET /fapi/v1/time HTTP/1.1" 200 28
+2026-04-22 16:19:47 | INFO     | trading_bot.client | API REQUEST  -> POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776854986950&signature=8689880de354c90ed0d193cb86f073e0cb6d761d922ab36b509e7b3985de6f72
+2026-04-22 16:19:47 | DEBUG    | trading_bot.client | Request params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776854986950}
+2026-04-22 16:19:48 | DEBUG    | urllib3.connectionpool | https://testnet.binancefuture.com:443 "POST /fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776854986950&signature=8689880de354c90ed0d193cb86f073e0cb6d761d922ab36b509e7b3985de6f72 HTTP/1.1" 401 46
+2026-04-22 16:19:48 | INFO     | trading_bot.client | API RESPONSE <- POST /fapi/v1/order (HTTP 401)
+2026-04-22 16:19:48 | DEBUG    | trading_bot.client | Response body: {"code":-2014,"msg":"API-key format invalid."}
+2026-04-22 16:19:48 | ERROR    | trading_bot.client | API error: HTTP 401 | code=-2014 | msg=API-key format invalid.
+2026-04-22 16:19:48 | ERROR    | trading_bot.cli | API error placing order: Binance API Error [401] (code -2014): API-key format invalid.
+2026-04-22 16:42:24 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=True
+2026-04-22 16:42:24 | INFO     | trading_bot.cli | Dry-run mode: simulating order response.
+2026-04-22 16:42:37 | INFO     | trading_bot.cli | CLI invoked with: symbol=ETHUSDT side=SELL type=LIMIT qty=0.05 price=3500.0 dry_run=True
+2026-04-22 16:42:37 | INFO     | trading_bot.cli | Dry-run mode: simulating order response.
+2026-04-22 16:42:46 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=False
+2026-04-22 16:42:46 | INFO     | trading_bot.client | BinanceFuturesClient initialized (base_url=https://demo-api.binance.com)
+2026-04-22 16:42:46 | INFO     | trading_bot.client | Placing BUY MARKET order: symbol=BTCUSDT qty=0.001 price=None
+2026-04-22 16:42:46 | DEBUG    | urllib3.connectionpool | Starting new HTTPS connection (1): demo-api.binance.com:443
+2026-04-22 16:42:47 | DEBUG    | urllib3.connectionpool | https://demo-api.binance.com:443 "GET /fapi/v1/time HTTP/1.1" 404 146
+2026-04-22 16:42:47 | WARNING  | trading_bot.client | Could not fetch server time; using local clock.
+2026-04-22 16:42:47 | INFO     | trading_bot.client | API REQUEST  -> POST https://demo-api.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776856367537&signature=c7e170b9145b10c751c43643796a83563522af6f7c51a4868b84e16c1ffa3759
+2026-04-22 16:42:47 | DEBUG    | trading_bot.client | Request params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776856367537}
+2026-04-22 16:42:47 | DEBUG    | urllib3.connectionpool | https://demo-api.binance.com:443 "POST /fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776856367537&signature=c7e170b9145b10c751c43643796a83563522af6f7c51a4868b84e16c1ffa3759 HTTP/1.1" 404 146
+2026-04-22 16:42:47 | INFO     | trading_bot.client | API RESPONSE <- POST /fapi/v1/order (HTTP 404)
+2026-04-22 16:42:47 | DEBUG    | trading_bot.client | Response body: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-04-22 16:42:47 | ERROR    | trading_bot.cli | Unexpected error placing order
+Traceback (most recent call last):
+  File "C:\Users\anujb\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 978, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\anujb\OneDrive\Desktop\python\trading_bot\cli.py", line 333, in main
+    response = client.place_order(
+        symbol=symbol,
+    ...<3 lines>...
+        price=price,
+    )
+  File "C:\Users\anujb\OneDrive\Desktop\python\trading_bot\client.py", line 218, in place_order
+    return self._send_signed_request("POST", "/fapi/v1/order", params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anujb\OneDrive\Desktop\python\trading_bot\client.py", line 123, in _send_signed_request
+    data = response.json()
+  File "C:\Users\anujb\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 982, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-04-22 16:44:16 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=False
+2026-04-22 16:44:16 | INFO     | trading_bot.client | BinanceFuturesClient initialized (base_url=https://demo-api.binance.com)
+2026-04-22 16:44:16 | INFO     | trading_bot.client | Placing BUY MARKET order: symbol=BTCUSDT qty=0.001 price=None
+2026-04-22 16:44:16 | DEBUG    | urllib3.connectionpool | Starting new HTTPS connection (1): demo-api.binance.com:443
+2026-04-22 16:44:17 | DEBUG    | urllib3.connectionpool | https://demo-api.binance.com:443 "GET /fapi/v1/time HTTP/1.1" 404 146
+2026-04-22 16:44:17 | WARNING  | trading_bot.client | Could not fetch server time; using local clock.
+2026-04-22 16:44:17 | INFO     | trading_bot.client | API REQUEST  -> POST https://demo-api.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776856457259&signature=d2f392fde77ceca8de8dfa12e41e4e77bbec885a7a2a2832ee0529444e9c0f44
+2026-04-22 16:44:17 | DEBUG    | trading_bot.client | Request params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776856457259}
+2026-04-22 16:44:17 | DEBUG    | urllib3.connectionpool | https://demo-api.binance.com:443 "POST /fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1776856457259&signature=d2f392fde77ceca8de8dfa12e41e4e77bbec885a7a2a2832ee0529444e9c0f44 HTTP/1.1" 404 146
+2026-04-22 16:44:17 | INFO     | trading_bot.client | API RESPONSE <- POST /fapi/v1/order (HTTP 404)
+2026-04-22 16:44:17 | DEBUG    | trading_bot.client | Response body: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-04-22 16:44:17 | ERROR    | trading_bot.client | Non-JSON response (HTTP 404): <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-04-22 16:44:17 | ERROR    | trading_bot.cli | API error placing order: Binance API Error [404] (code -1): Server returned non-JSON response (HTTP 404). Check your API key and base URL.
+2026-04-22 16:44:22 | INFO     | trading_bot.cli | CLI invoked with: symbol=ETHUSDT side=SELL type=LIMIT qty=0.05 price=3500.0 dry_run=True
+2026-04-22 16:44:22 | INFO     | trading_bot.cli | Dry-run mode: simulating order response.
+2026-04-22 19:39:56 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=True
+2026-04-22 19:39:56 | INFO     | trading_bot.cli | Dry-run mode: simulating order response.
+2026-04-22 19:39:57 | INFO     | trading_bot.cli | CLI invoked with: symbol=ETHUSDT side=SELL type=LIMIT qty=0.05 price=3500.0 dry_run=True
+2026-04-22 19:39:57 | INFO     | trading_bot.cli | Dry-run mode: simulating order response.
+2026-04-23 19:37:09 | INFO     | trading_bot.cli | CLI invoked with: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None dry_run=True
+2026-04-23 19:37:09 | INFO     | trading_bot.cli | Dry-run mode: simulating order response.
